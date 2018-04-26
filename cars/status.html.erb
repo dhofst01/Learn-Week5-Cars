@@ -1,0 +1,29 @@
+<h1>Car Status</h1>
+<%= @car.car %>
+<br/>
+
+<%= @car.getspeed %>
+<br/>
+
+<%= @car.lightstatus %>
+<br/>
+
+<%= @car.driftStatus%>
+
+<form action="accelerate" method="get">
+  <input type="submit" value="Accelerate"/>
+</form>
+<form action="brake" method="get">
+  <input type="submit" value="Brake"/>
+</form>
+<form action="toggleLights" method="get">
+  <input type="submit" value="Toggle Lights"/>
+</form>
+
+<hr/>
+
+<form action="drift" method="get">
+  <input type="radio" name="driftLever" id="on" value="on" checked="checked"> Drift On!<br>
+  <input type="radio" name="driftLever" id="off" value="off"> Drift Off<br>
+  <input type="submit" value="submit" />
+</form>
